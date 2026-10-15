@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d18">
+  <meta name="description" content="Royal xCode Technologies builds AI-powered business technology, automation workflows, and enterprise software concepts.">
+  <title>Royal xCode Technologies | AI. Automation. Business Technology.</title>
+  <style>
+    :root{--bg:#070b14;--panel:#0d1422;--panel2:#111b2d;--gold:#d8b46a;--gold2:#f4d99a;--blue:#78aaff;--text:#f4f6fb;--muted:#aab5c8;--line:rgba(255,255,255,.11);--max:1160px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,rgba(39,86,160,.18),transparent 38%),var(--bg);color:var(--text);font:16px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    .nav{position:sticky;top:0;z-index:10;background:rgba(7,11,20,.86);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    .navin{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.02em}.mark{width:40px;height:40px;border:1px solid var(--gold);border-radius:12px;display:grid;place-items:center;color:var(--gold2);font-weight:900;background:linear-gradient(145deg,#1a2232,#080d18);box-shadow:0 0 25px #d8b46a15}
+    .brand small{display:block;color:var(--muted);font-size:10px;letter-spacing:.18em;font-weight:600}
+    .links{display:flex;align-items:center;gap:25px;color:#d0d8e6;font-size:14px}.links a:hover{color:var(--gold2)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border:1px solid var(--gold);border-radius:10px;background:linear-gradient(135deg,var(--gold2),var(--gold));color:#10131b;font-weight:800;font-size:14px;transition:transform .2s,filter .2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.05)}
+    .btn.ghost{background:transparent;color:var(--text);border-color:var(--line)}.btn.ghost:hover{border-color:var(--gold);color:var(--gold2)}
+    .hero{padding:100px 0 80px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:480px;height:480px;border:1px solid #d8b46a20;border-radius:50%;right:-170px;top:10px;box-shadow:0 0 0 55px #d8b46a08,0 0 0 110px #d8b46a05;pointer-events:none}
+    .eyebrow{color:var(--gold2);font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";width:30px;height:1px;background:var(--gold)}
+    h1{font-size:clamp(42px,7vw,78px);line-height:1.04;letter-spacing:-.055em;max-width:850px;margin:22px 0}.gold{background:linear-gradient(100deg,#fff0c7,var(--gold),#9fc4ff);background-clip:text;color:transparent}
+    .lead{max-width:680px;color:var(--muted);font-size:clamp(17px,2vw,20px);margin:0 0 30px}.actions{display:flex;flex-wrap:wrap;gap:12px}
+    .hero-meta{display:flex;flex-wrap:wrap;gap:24px;margin-top:56px;color:#aab5c8;font-size:13px}.hero-meta span:before{content:"✦";color:var(--gold);margin-right:9px}
+    section{padding:76px 0}.section-head{max-width:720px;margin-bottom:32px}.kicker{color:var(--gold);font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:800}.section-head h2{font-size:clamp(30px,4vw,46px);line-height:1.12;letter-spacing:-.035em;margin:10px 0 12px}.section-head p{color:var(--muted);margin:0}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{padding:26px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(155deg,rgba(20,31,50,.95),rgba(10,15,26,.95));min-height:240px;position:relative;overflow:hidden}.card:before{content:"";position:absolute;inset:0 auto auto 0;width:100%;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.8}
+    .num{color:var(--gold);font-size:12px;letter-spacing:.15em;font-weight:800}.card h3{font-size:22px;margin:15px 0 8px}.card p{color:var(--muted);font-size:14px;margin:0 0 18px}.tag{display:inline-block;border:1px solid #d8b46a44;border-radius:99px;padding:5px 9px;color:var(--gold2);font-size:11px;margin:4px 5px 0 0}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.feature-panel{padding:30px;border:1px solid var(--line);border-radius:20px;background:radial-gradient(circle at 100% 0%,#1e3e682e,transparent 45%),var(--panel)}
+    .feature{display:flex;gap:14px;padding:17px 0;border-bottom:1px solid var(--line)}.feature:last-child{border-bottom:0}.icon{width:38px;height:38px;flex:0 0 38px;border-radius:11px;display:grid;place-items:center;color:var(--gold2);background:#d8b46a13;border:1px solid #d8b46a33}.feature h3{margin:0 0 4px;font-size:16px}.feature p{margin:0;color:var(--muted);font-size:13px}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.step{padding:20px;border:1px solid var(--line);border-radius:14px;background:#0b111e}.step b{display:block;color:var(--gold2);font-size:12px;letter-spacing:.14em;margin-bottom:9px}.step strong{display:block;font-size:17px;margin-bottom:5px}.step p{color:var(--muted);font-size:13px;margin:0}
+    .cta{border:1px solid #d8b46a44;border-radius:22px;padding:42px;background:radial-gradient(ellipse at 100% 0%,#24457444,transparent 55%),linear-gradient(135deg,#111a2b,#0a101b);display:flex;justify-content:space-between;align-items:center;gap:24px}.cta h2{font-size:clamp(28px,4vw,42px);line-height:1.1;margin:8px 0}.cta p{color:var(--muted);margin:0;max-width:650px}
+    footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:12px}.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    @media(max-width:800px){.links{gap:12px}.links a:not(.btn){display:none}.grid{grid-template-columns:1fr}.split{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.hero{padding:72px 0 58px}.cta{align-items:flex-start;flex-direction:column}}
+    @media(max-width:460px){.wrap{width:min(var(--max),calc(100% - 28px))}.navin{height:68px}.brand{font-size:13px}.brand small{font-size:9px}.mark{width:36px;height:36px}.links .btn{padding:10px 12px;font-size:12px}.steps{grid-template-columns:1fr}.hero-meta{gap:12px;flex-direction:column}.card{min-height:unset;padding:23px}}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap navin">
+      <a class="brand" href="#home" aria-label="Royal xCode home"><span class="mark">RX</span><span>ROYAL XCODE<small>TECHNOLOGIES</small></span></a>
+      <nav class="links" aria-label="Main navigation">
+        <a href="#solutions">Solutions</a><a href="#approach">Our approach</a><a href="#about">About</a>
+        <a class="btn" href="#contact">Discuss a project ↗</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap">
+        <div class="eyebrow">AI · Automation · Business Technology</div>
+        <h1>Build smarter.<br><span class="gold">Operate with clarity.</span></h1>
+        <p class="lead">Royal xCode Technologies explores practical AI-powered software and connected workflows that help businesses organize operations, make informed decisions, and scale with confidence.</p>
+        <div class="actions"><a class="btn" href="#solutions">Explore our solutions ↓</a><a class="btn ghost" href="#about">Meet Royal xCode</a></div>
+        <div class="hero-meta"><span>Business-first technology</span><span>AI-enabled workflows</span><span>Connected operations</span></div>
+      </div>
+    </section>
+
+    <section id="solutions">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Product portfolio</div><h2>One ecosystem. Multiple ways to work smarter.</h2><p>Our portfolio spans business intelligence, construction operations, and omnichannel trading workflows. Product availability and capabilities depend on the specific deployment.</p></div>
+        <div class="grid">
+          <article class="card"><div class="num">01 / AI PLATFORM</div><h3>Royal AI OS</h3><p>A vision for a unified business workspace connecting AI assistance, company knowledge, project visibility, and operational tools.</p><span class="tag">AI workspace</span><span class="tag">Business intelligence</span><span class="tag">Workflow orchestration</span></article>
+          <article class="card"><div class="num">02 / CONSTRUCTION & ERP</div><h3>Royal ProBuild ERP</h3><p>A business-operations concept for coordinating construction projects, procurement, finance, teams, and progress reporting.</p><span class="tag">Project operations</span><span class="tag">Procurement</span><span class="tag">ERP workflows</span></article>
+          <article class="card"><div class="num">03 / TRADING OPERATIONS</div><h3>Royal OmniTrade</h3><p>An omnichannel trading CRM concept designed to organize customer records, sales pipelines, orders, and channel workflows.</p><span class="tag">CRM</span><span class="tag">Orders</span><span class="tag">Sales pipeline</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap split">
+        <div class="section-head"><div class="kicker">Who we are</div><h2>Technology should solve the real work.</h2><p>Royal xCode Technologies focuses on the intersection of AI, automation, and business systems. We aim to turn fragmented tasks into clearer workflows—with a practical emphasis on usability, visibility, and responsible implementation.</p><p style="margin-top:16px;color:var(--muted)">We present product concepts honestly: features should be described as live only after they have been implemented, tested, and verified.</p></div>
+        <div class="feature-panel">
+          <div class="feature"><span class="icon">✦</span><div><h3>AI with a purpose</h3><p>Use AI to support useful work—not just add another dashboard.</p></div></div>
+          <div class="feature"><span class="icon">⌘</span><div><h3>Connected workflows</h3><p>Make handoffs between people, processes, and tools easier to understand.</p></div></div>
+          <div class="feature"><span class="icon">↗</span><div><h3>Built for business context</h3><p>Design around operational needs, measurable outcomes, and clear constraints.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="approach">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Our approach</div><h2>From idea to verified delivery.</h2><p>A straightforward process keeps the work focused and makes progress easier to review.</p></div>
+        <div class="steps">
+          <div class="step"><b>STEP 01</b><strong>Understand</strong><p>Define the business need, users, and constraints.</p></div>
+          <div class="step"><b>STEP 02</b><strong>Plan</strong><p>Agree on scope, workflows, and success criteria.</p></div>
+          <div class="step"><b>STEP 03</b><strong>Build</strong><p>Implement the smallest useful, testable solution.</p></div>
+          <div class="step"><b>STEP 04</b><strong>Test & improve</strong><p>Verify behavior, fix issues, and document limitations.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="cta"><div><div class="kicker">Start a conversation</div><h2>Have a business workflow to improve?</h2><p>Connect with Royal xCode Technologies to discuss AI, automation, software concepts, or a potential collaboration.</p></div><div class="actions"><a class="btn" href="https://www.linkedin.com/in/md-ashifur-rahman-shawon-480812424/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a class="btn ghost" href="https://www.youtube.com/@royalxcodetechnologies" target="_blank" rel="noopener noreferrer">YouTube ↗</a></div></div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap foot"><span>© <span id="year"></span> Royal xCode Technologies. All rights reserved.</span><span>AI · Automation · Business Technology</span></div></footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
