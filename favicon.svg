@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Royal Expo Technologies emblem</title>
+  <desc id="desc">A gold crown above a blue RX monogram, enclosed in a circular black and gold emblem.</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff0bd"/><stop offset=".48" stop-color="#d8b46a"/><stop offset="1" stop-color="#9e742e"/></linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9ec8ff"/><stop offset="1" stop-color="#3478dc"/></linearGradient>
+  </defs>
+  <circle cx="64" cy="64" r="60" fill="#070b14" stroke="url(#gold)" stroke-width="3"/>
+  <circle cx="64" cy="64" r="52" fill="none" stroke="#d8b46a" stroke-opacity=".32" stroke-width="1.5"/>
+  <path d="M35 35 27 19 47 29 64 12 81 29 101 19 93 35 88 45H40Z" fill="url(#gold)" stroke="#f4d99a" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M39 48H89" stroke="url(#gold)" stroke-width="3" stroke-linecap="round"/>
+  <text x="64" y="83" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="39" font-weight="900" letter-spacing="-3" fill="url(#blue)">RX</text>
+  <path d="M39 93H89" stroke="url(#gold)" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="26" cy="64" r="2" fill="#d8b46a"/><circle cx="102" cy="64" r="2" fill="#d8b46a"/>
+</svg>
